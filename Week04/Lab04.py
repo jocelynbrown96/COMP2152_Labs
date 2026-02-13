@@ -85,14 +85,14 @@ for numbers, target in test_cases:
 # ============================================
 
 def shuffle_array(nums, n):
-    # Step 1: Split into two halves using slicing
+    # Step 1: Split into two halves using slicing:
     first_half = nums[:n]    # slice from start to n
     second_half = nums[n:]   # slice from n to end
 
-    # Step 2: Create empty result list
+    # Step 2: Create empty result list:
     result = []
 
-    # Step 3: Interleave using a for loop
+    # Step 3: Interleave using a for loop:
     # TODO: Loop through range(n) and append alternating elements
     for i in range(n):
         result.append(first_half[i])
@@ -111,11 +111,11 @@ for nums, n in test_cases:
     print("Original: " + str(nums))
     print("n = " + str(n))
 
-    # Show the slices
+    # Show the slices:
     print("First half (nums[:" + str(n) + "]): " + str(nums[:n]))
     print("Second half (nums[" + str(n) + ":]): " + str(nums[n:]))
 
-    # Get result
+    # Get result:
     result = shuffle_array(nums, n)
     print("Shuffled: " + str(result))
     print()
@@ -137,22 +137,22 @@ def count_characters(s):
             counts[char] = 1
     return counts
 
-# Main function: Find first unique character
+# Main function: Find first unique character.
 def first_unique_character(s):
-    # Step 1: Get character counts using helper function
+    # Step 1: Get character counts using helper function:
     char_counts = count_characters(s)
 
-    # Step 2: Loop through string with index to find first unique
+    # Step 2: Loop through string with index to find first unique:
     # TODO: Use for i in range(len(s)) to check each character
     # Return i if char_counts[s[i]] == 1
     for i in range(len(s)):
         if char_counts[s[i]] == 1:
             return i
         
-    # Step 3: Return -1 if no unique character found
+    # Step 3: Return -1 if no unique character found:
     return -1
 
-# Test cases
+# Test cases:
 test_strings = ["leetcode", "loveleetcode", "aabb", "python", "aabbcc"]
 
 for s in test_strings:
@@ -163,7 +163,7 @@ for s in test_strings:
     else:
         print("First unique character in '" + s + "': index -1 (no unique character)")
 
-    # Show the character counts for understanding
+    # Show the character counts for understanding:
     counts = count_characters(s)
     print("  Character counts: " + str(counts))
     print()
