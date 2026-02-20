@@ -1,0 +1,7 @@
+2026-02-20 14:25:57,ping,google.com,15,Success
+2026-02-20 14:29:01,nslookup,github.com,Not found,Failed
+2026-02-20 14:31:19,nslookup,google.com,Not found,Failed
+2026-02-20 14:31:30,nslookup,www.github.com,Not found,Failed
+2026-02-20 14:31:56,nslookup,https://github.com/,Not found,Failed
+2026-02-20 14:34:04,ipconfig,all,E0-BE-03-6E-2C-94 / 192.168.0.10,Captured
+2026-02-20 14:34:14,arp,local,6 devices,Captured
