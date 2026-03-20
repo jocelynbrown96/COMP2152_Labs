@@ -40,10 +40,6 @@ def get_python_info():
         "platform": sys.platform
     }
 
-# TODO: Complete get_directory_info(path)
-#   Return a dict with keys: "path", "exists", "file_count", "is_directory"
-#   Use: os.path.abspath(), os.path.exists(),
-#        os.listdir() (count items), os.path.isdir()
 def get_directory_info(path):
     abs_path = os.path.abspath(path)
     exists = os.path.exists(abs_path)
@@ -56,8 +52,6 @@ def get_directory_info(path):
         "is_directory": is_directory
     }
     
-
-
 # --- Main (provided) ---
 if __name__ == "__main__":
     print("=" * 60)
